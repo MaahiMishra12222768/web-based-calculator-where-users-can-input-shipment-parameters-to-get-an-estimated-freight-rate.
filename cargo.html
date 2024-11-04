@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipment Rate Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Shipment Rate Calculator</h1>
+        <form id="rateForm">
+            <label for="weight">Shipment Weight (kg):</label>
+            <input type="number" id="weight" placeholder="e.g., 5" required>
+
+            <label for="distance">Shipment Distance (km):</label>
+            <input type="number" id="distance" placeholder="e.g., 100" required>
+
+            <label for="carrier">Carrier Type:</label>
+            <select id="carrier" required>
+                <option value="ground">Ground</option>
+                <option value="air">Air</option>
+                <option value="express">Express</option>
+            </select>
+
+            <button type="button" id="calculateBtn">Calculate</button>
+        </form>
+        <div id="result"></div>
+        <div id="error-message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
