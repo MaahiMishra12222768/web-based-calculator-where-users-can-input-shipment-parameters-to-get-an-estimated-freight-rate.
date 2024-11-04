@@ -1,0 +1,79 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('graffiti-background.jpg'); /* Replace with path to your image */
+    background-size: cover;
+    background-color: #F5F5DC;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #333;
+    text-shadow: 1px 1px 2px #aaa;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #333;
+    outline: none;
+}
+
+button {
+    background-color: #333;
+    color: #FFF;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #006400; /* Dark green for results */
+    font-weight: bold;
+}
+
+#error-message {
+    color: red;
+    font-size: 1em;
+    margin-top: 10px;
+}
